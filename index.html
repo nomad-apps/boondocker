@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <title>boondocker</title>
+
+  <!-- ensure we get the correct favicon even is we run as a subdomain -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+
+  <!-- add to homescreen reminder: https://github.com/cubiq/add-to-homescreen -->
+  <script src="deps/addtohomescreen/addtohomescreen.min.js" type="application/javascript"></script>
+  <link rel="stylesheet" href="deps/addtohomescreen/addtohomescreen.css" type="text/css" media="screen" charset="utf-8">
+
+  <link rel="stylesheet" href="css/index.css" type="text/css" media="screen" title="main css" charset="utf-8">
+  <script src="build/data.js" type="application/javascript"></script>
+  <script src="build/bundle.js" type="application/javascript"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyJHf8hX0eYaRw9bgqZx8TkOYyLVHTF3I&signed_in=true&callback=initMap"></script>
+
+  <!-- needed for diagnosis in development -->
+  <script src="deps/json-human/crel.js" type="application/javascript"></script>
+  <script src="deps/json-human/json.human.js" type="application/javascript"></script>
+  <link rel="stylesheet" href="deps/json-human/json.human.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+  <div id="map" class="map"></div>
+  <div id="content" class="content hidden"></div>
+  <div id="quickinfo" class="quickinfo"></div>
+  <div id="open-googlemaps" class="open-googlemaps"></div>
+</body>
+</html>
